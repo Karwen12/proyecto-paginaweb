@@ -1,0 +1,638 @@
+*{
+    box-sizing: border-box; 
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Hind', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.menu{
+    background-color: rgba(0, 0, 0, 0.925);
+    display: flex;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+.logosuper{
+    width: 80px;
+    margin-left: 45px;
+    animation: ilustrationAnimate ease-in 1s infinite alternate;
+}
+@keyframes ilustrationAnimate {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.10);
+    }
+}
+.logosuper:hover{
+    animation: none;
+}
+.logo{
+    flex: 1 1 auto;
+}
+.hamb{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+.navegador{
+    flex: 5 1 auto;
+}
+.navegador a{
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    letter-spacing: 2px;
+}
+.navegador a:hover{
+    color: rgb(51, 51, 51);
+}
+.iniciar-jugar{
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.iniciar-jugar a i{  
+    background-color: rgba(128, 128, 128, 0.486);
+    border-radius: 50%;
+    padding: 5px 5px;
+    font-size: 18px;
+    justify-content: center;
+}
+.iniciar-jugar a i:hover{  
+    color: rgb(51, 51, 51);
+}
+.iniciar-jugar a{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+}
+.iniciar:hover{
+    color: rgb(34, 34, 34);
+}
+.iniciar{
+    font-size: 13px;
+}
+.jugar{
+    background-color: rgb(39, 148, 221);
+    padding: 10px 30px;
+    font-size: 13px; 
+    align-items: center;
+}
+.jugar:hover{
+    background-color: rgb(196, 82, 17);
+    color: white;
+}
+.imagen{
+    background: url(img/fondo.jpg);
+    height: 718px;
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+ }
+ .texto{
+     position: absolute;
+     top: 20%;
+     left: 50%;
+     width: 400px;
+     text-align: center;
+     margin-left: -200px;
+ }
+ .texto h3{
+     color:rgba(0, 0, 0, 0.925);
+     font-size: 20px;
+ }
+ .texto img{
+     width: 400px;
+     animation: ilustrationAnimate ease-in 1s infinite alternate;
+    }
+    @keyframes ilustrationAnimate {
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(1.04);
+        }
+    }
+ .texto a{
+     color: white;
+     background-color: black;
+     padding: 10px 20px;
+ }
+ .texto a:hover{
+    background-color: rgb(196, 82, 17);
+}
+ .wave{
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+   
+ }
+ .main{
+    background-color: white;      
+ }
+ .parte1{    
+    position: relative;    
+    
+ }
+ .contenedornita{
+     display: flex;     
+     align-items: center;  
+     flex: 1 1 100%;
+     flex-flow: row wrap;
+     padding-bottom: 70px;
+     justify-content: space-around;
+ }
+ .imgnita img{
+     width: 650px;
+     padding: 40px;  
+     max-width: 100%;
+ }
+
+ .textonita h3{
+     font-size: 70px;
+     color: rgba(39, 39, 39, 0.87);
+     text-transform: uppercase;
+     text-align: center;
+ }
+ .textonita p{
+    margin-bottom: 40px;
+}
+ .textonita a{
+    color: rgba(255, 255, 255, 0.87);
+    padding: 10px 20px;
+    background-color: black;
+    text-transform: uppercase;
+    text-align: center;  
+}
+.textonita a:hover{
+    background-color: rgb(39, 148, 221);
+}
+.gale img{
+    width: 300px;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+ .parte2{
+     background-color: #273036;
+ } 
+ .parte2 h2{
+     color: white;
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 60px;
+     letter-spacing: 2px;
+     padding-top: 60px;
+     padding-bottom: 0px;
+     
+ }
+ .contenedor-modo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-bottom: 50px;
+ } 
+ .modo{
+    margin: 30px 10px;
+    
+ }
+ .modo img{
+     width: 360px;
+     display: block;   
+     border: 2px solid white;
+ }
+ .modo h3{
+    color: white;
+     letter-spacing: 2px;
+     font-size: 24px;
+     text-align: center;
+     margin: 10px;
+ }
+ .modo a{
+    color: white;
+    padding: 10px 25px;
+    background-color: rgba(0, 0, 0, 0.329);
+    display: flex;
+    justify-content: center;
+ }
+ .modo a:hover{
+    color: rgb(255, 255, 255);
+    background-color:  #006ed1;
+}
+ .cazaestelar img{
+     width: 440px;
+     margin-top: 20px;
+ }
+ .parte3{
+     position: relative;
+ }
+ .wave2{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+ }
+ 
+ .contenedoreventos h3{
+     text-align: right;
+     padding-top: 140px;
+     margin-right: 35px;
+     font-size: 60px;
+ }
+ .eventos{
+     display: flex;
+     flex: 1 1 auto;
+     flex-flow: row wrap; 
+     justify-content: space-evenly;
+ }
+ .eventos p{
+     text-align: justify;
+ }
+ .evento{
+     background-color: rgb(255, 255, 255);
+     padding: 40px 20px;
+     max-width: 250px;
+     border: 2px solid rgba(0, 0, 0, 0.596);
+     border-radius: 10px;
+     flex-flow: row wrap; 
+     margin: 60px 0 130px 0;    
+ }
+ .evento:hover{
+     background-color: gray;
+     color: white;
+     border: 2px gray;
+     padding: 40px 23px;
+     
+ }
+ .evento img{
+     width: 200px;
+ }
+ .evento img:hover{
+    
+    animation: ilustrationAnimate ease-in 1s infinite alternate;
+   }
+   @keyframes ilustrationAnimate {
+       0%{
+           transform: scale(1);
+       }
+       100%{
+           transform: scale(1.04);
+       }
+   }
+ .evento h4{
+    font-size: 19px;
+ }
+ .megabrawl h4{
+     margin-top: 25px;
+ }
+ .irrupcionurbana h4{
+    margin-top: 47px;
+}
+ .todoscontrauno img{
+    height: 200px;
+}
+.todoscontrauno h4{
+    margin-top: 27px;
+}
+.pelearobotica img{
+    height: 230px;
+}
+.wave3{
+    position: absolute;
+    bottom: 0%;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+}
+.parte4{
+    background-color:#273036 ;
+}
+.parte4 h3{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    padding: 40px 0;
+}
+.contenedornoticias{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row  wrap;
+}
+.noticias{
+    padding-bottom: 70px;
+}
+.noticias img{
+    width: 400px;
+    border: 2px solid white;
+}
+.noticias h4{
+    color: white;
+     letter-spacing: 1px;
+     font-size: 24px;
+     text-align: center;
+     margin: 10px;
+}
+.noticias a{
+    color: white;
+    padding: 10px 25px;
+    background-color: rgba(0, 0, 0, 0.329);
+    display: flex;
+    justify-content: center;
+}
+.noticias a:hover{
+    color: rgb(255, 255, 255);
+    background-color:  #2cc044;
+}
+.wave4{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+.parte5{
+    padding-bottom: 100px;
+    position: relative;
+}
+.parte5 h3{
+    text-align: center;
+    color: gray;
+    padding: 120px 20px 50px 20px ;
+    font-size: 60px;
+
+}
+.contenedorvideos{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 100%;
+    justify-content: space-evenly;   
+}
+.video img{
+    width: 500px;
+    
+} 
+.video{
+    position: relative;
+    padding-bottom: 10px;
+    box-shadow: 3px 3px 8px gray;
+    margin-bottom: 40px;
+}
+.playbtn {
+    font-size: 70px;
+    position: absolute;
+    left: 45%;
+    top: 25%; 
+}
+.playbtn a{
+    color: rgba(255, 255, 255, 0.548);
+}
+.titulovideo{
+    font-size: 20px;
+    padding: 20px 30px;
+}
+.titulovideo a{
+    color: #000;
+}
+.titulovideo a:hover{
+    color: rgb(83, 200, 204);
+}
+.inviteyoutube{
+    text-align: center;
+}
+.inviteyoutube h4{
+    font-size: 20px;
+    margin: 50px 20px 10px 20px;
+}
+.inviteyoutube img{
+    width: 200px;
+}
+footer{
+    background-color: black;
+    color: white;
+    flex: 1 1 auto;  
+    padding: 60px 10px 10px 10px;   
+}
+.pie1{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;    
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: rgba(255, 255, 255, 0.274);
+}
+.redes{
+    padding: 10px 30px;   
+}
+.redes a{
+    font-size: 40px;
+    padding-left: 20px;
+}
+.descargar a{ 
+    flex-flow: row wrap;
+    align-items: center;
+}
+.app{
+   width: 200px;
+   margin-bottom: 10px;
+}
+.play{
+   width: 200px;
+}
+.politicas{
+    margin-top: 30px;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+}
+.bar-btn{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+/*TABLETS*/
+@media (max-width: 1025px){
+    .hamb{
+        display: block;
+        padding-right: 40px;
+    }
+    .contenedornita{
+        align-items: flex-start;
+    }
+    .imgnita{
+        max-width: 650px;
+        
+    }
+    .iniciar-jugar{
+        display: none;
+    }
+    .wave{
+    height: 10%; 
+    top: 92%;
+    }
+    .modo img{
+        width: 560px;
+    }
+    .wave2{
+        top: -2px;
+        height: 90px;
+     }
+     .contenedoreventos h3{
+         text-align: center;
+         margin-right: 0;
+     }
+     .evento{
+         margin: 50px;
+     }
+    .todoscontrauno{
+        margin-bottom: 120px;
+    }
+    .pelearobotica{
+        margin-bottom: 120px;
+    }
+    .noticias img{
+        width: 560px;
+    }
+    .wave3{
+        top: 97%;
+        height: 90px;
+    }
+    .wave4{
+        top: -2px;
+        height: 90px;
+    }
+    .video{
+        margin: 20px 30px;
+    }
+    .video img{
+        width: 550px;        
+    } 
+    .imagen {
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+    }
+    .texto{
+        top: 35%;
+    }
+    .playbtn {
+        font-size: 90px;
+        left: 42%;
+        top: 25%; 
+    }
+    
+} 
+/*CELULARES*/
+@media (max-width: 767px){
+    .hamb{
+        display: block;
+    }
+    .logosuper{
+        width: 65px;
+        margin-left: 35px;
+    }
+    .imgnita{
+        padding: 0px;
+    }
+    .iniciar-jugar{
+        display: none;
+    }
+    .navegador{
+        display: none;
+    }
+    .wave{
+        height: 10%; 
+        top: 92%;
+    }
+    .gale{
+        margin-left: 70px;
+    }
+    .modo img{
+        max-width: 300px;
+    }
+    .wave2{
+        top: -2px;
+        height: 90px;
+    }
+    .parte2 h2{
+        font-size: 35px;
+    }
+    .parte4 h3{
+        font-size: 35px;
+    }
+    .parte5 h3{
+        font-size: 35px;
+    }
+    .contenedoreventos h3{
+        text-align: center;
+        margin-right: 0;
+        font-size: 35px;
+    }
+    .evento{
+        margin: 40px;
+    }
+    .pelearobotica{
+        margin-bottom: 120px;
+    }
+    .wave3{
+        top: 97.5%;
+        height: 90px;
+    }
+    .noticias img{
+        max-width: 300px;
+    }
+    .wave4{
+        top: -2px;
+        height: 90px;
+    }
+    .video img{
+        max-width: 300px;        
+    }
+    .descargar{
+        margin-left: 20px;
+    }
+    .playbtn {
+        font-size: 70px;
+        left: 38%;
+        top: 18%; 
+    }
+    .texto{
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        width: 250px;
+        text-align: center;
+        margin-left: -125px;
+    }
+    .texto img{
+        width: 250px;
+    }
+}
+
+
